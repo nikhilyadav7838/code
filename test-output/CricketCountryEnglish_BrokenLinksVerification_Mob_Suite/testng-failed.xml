@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CricketCountryEnglish_BrokenLinksVerification_Mob_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CricketCountryEnglish_BrokenLinksVerification_Mob(failed)">
+    <parameter name="APPIUM_URL" value="http://0.0.0.0:4723/wd/hub"/>
+    <parameter name="testng.metrics.report.name" value="TestCricketCountryBrokenLinksEnglishSiteForMob.html"/>
+    <parameter name="DEVICE_TYPE" value="AndroidReal"/>
+    <parameter name="USE_APIDRIVER_WITH_WEB" value="true"/>
+    <parameter name="testng.metrics.report.logo" value="https://english.cdn.zeenews.com/images/logo/zeenewslogo_nav.png"/>
+    <parameter name="BROWSER_NAME" value="Chrome"/>
+    <parameter name="JENKINS_JOB_NAME" value="CricketCountryEnglish_BrokenLinksVerification_Mob"/>
+    <parameter name="testng.metrics.report.appendTimestamp" value="True"/>
+    <parameter name="DEVICE_NAME" value="R9ZN909H54L"/>
+    <parameter name="URL" value="https://stagepwa.cricketcountry.com"/>
+    <classes>
+      <class name="com.zee.cricketcountry.mob.TestCricketCountryBrokenLinksForMob">
+        <methods>
+          <include name="test06_ValidateBrokenLinksOfMainPageAndTwoPhotosSectionForPhotoPage"/>
+          <include name="cleanDirectories"/>
+          <include name="test05_ValidateBrokenLinksOfTwoArticlesForMomentsInHistoryPage"/>
+          <include name="initChrome"/>
+          <include name="writeDataInExcel"/>
+          <include name="test03_ValidateBrokenLinksOfMainPageOfT20WorldCup"/>
+          <include name="test01_ValidateBrokenLinksOfMainPageOfLiveScorePage"/>
+          <include name="test04_ValidateBrokenLinksOfMainPageOfSeries"/>
+          <include name="tearDown"/>
+          <include name="test02_ValidateBrokenLinksOfTwoArticlesForNews"/>
+        </methods>
+      </class> <!-- com.zee.cricketcountry.mob.TestCricketCountryBrokenLinksForMob -->
+    </classes>
+  </test> <!-- CricketCountryEnglish_BrokenLinksVerification_Mob(failed) -->
+</suite> <!-- Failed suite [CricketCountryEnglish_BrokenLinksVerification_Mob_Suite] -->
