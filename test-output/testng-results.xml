@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-20T12:07:39 IST" name="ZeeNews_Regression_Suite" finished-at="2023-01-20T12:17:03 IST" duration-ms="564456">
+    <groups>
+    </groups>
+    <test started-at="2023-01-20T12:07:39 IST" name="ZeeNews_Regression_Suite" finished-at="2023-01-20T12:17:03 IST" duration-ms="564456">
+      <class name="com.zee.backend.TestWebPageSpeed">
+        <test-method is-config="true" signature="cleanDirectories()[pri:0, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:07:39 IST" name="cleanDirectories" finished-at="2023-01-20T12:07:39 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirectories -->
+        <test-method is-config="true" signature="initChrome(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:07:39 IST" name="initChrome" finished-at="2023-01-20T12:07:41 IST" duration-ms="2219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R9ZN909H54L]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initChrome -->
+        <test-method signature="test01_ValidatePageSpeedOfArticleForWeb(java.lang.String)[pri:1, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:07:41 IST" name="test01_ValidatePageSpeedOfArticleForWeb" finished-at="2023-01-20T12:10:24 IST" duration-ms="162326" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://zeenews.india.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Validated, The Core Vitals Assessment has been passed or failed.] but found [Passed]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Validated, The Core Vitals Assessment has been passed or failed.] but found [Passed]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.zee.backend.TestWebPageSpeed.test01_ValidatePageSpeedOfArticleForWeb(TestWebPageSpeed.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01_ValidatePageSpeedOfArticleForWeb -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:10:24 IST" name="tearDown" finished-at="2023-01-20T12:10:24 IST" duration-ms="875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initChrome(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:10:24 IST" name="initChrome" finished-at="2023-01-20T12:10:26 IST" duration-ms="1213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R9ZN909H54L]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initChrome -->
+        <test-method signature="test02_ValidatePageSpeedOfVideoForWeb(java.lang.String)[pri:2, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:10:26 IST" name="test02_ValidatePageSpeedOfVideoForWeb" finished-at="2023-01-20T12:11:54 IST" duration-ms="88657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://zeenews.india.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_ValidatePageSpeedOfVideoForWeb -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:11:54 IST" name="tearDown" finished-at="2023-01-20T12:12:00 IST" duration-ms="5567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initChrome(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:12:00 IST" name="initChrome" finished-at="2023-01-20T12:12:03 IST" duration-ms="3186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R9ZN909H54L]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initChrome -->
+        <test-method signature="test03_ValidatePageSpeedOfPhotosForWeb(java.lang.String)[pri:3, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:12:03 IST" name="test03_ValidatePageSpeedOfPhotosForWeb" finished-at="2023-01-20T12:12:43 IST" duration-ms="39847" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://zeenews.india.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/photos/business/lic-premiums-online-payment-heres-step-by-step-guide-on-how-to-pay-lic-premiums-online-via-google-pay-paytm-phonepe-and-other-upi-2563662" title="LIC premiums online payment: Here's step-by-step guide on how to pay LIC premiums online via google pay, paytm, phonepe and other UPI">...</a> is not clickable at point (498, 734). Other element would receive the click: <div class="gradiant_bg">...</div>
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ZD-104CCR3', ip: '192.168.12.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ZEE\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:51432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b097ea033e75cdca82513ecfbe4a5221]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/photos/business/lic-premiums-online-payment-heres-step-by-step-guide-on-how-to-pay-lic-premiums-online-via-google-pay-paytm-phonepe-and-other-upi-2563662" title="LIC premiums online payment: Here's step-by-step guide on how to pay LIC premiums online via google pay, paytm, phonepe and other UPI">...</a> is not clickable at point (498, 734). Other element would receive the click: <div class="gradiant_bg">...</div>
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ZD-104CCR3', ip: '192.168.12.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ZEE\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:51432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b097ea033e75cdca82513ecfbe4a5221
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.zee.webpages.ZeeNewsIndiaPhotoPage.selectTheFirstPictureAppearOnPhotoSectionPage(ZeeNewsIndiaPhotoPage.java:104)
+at com.zee.backend.TestWebPageSpeed.test03_ValidatePageSpeedOfPhotosForWeb(TestWebPageSpeed.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_ValidatePageSpeedOfPhotosForWeb -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:12:43 IST" name="tearDown" finished-at="2023-01-20T12:12:46 IST" duration-ms="3150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initChrome(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:12:46 IST" name="initChrome" finished-at="2023-01-20T12:12:48 IST" duration-ms="2357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R9ZN909H54L]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initChrome -->
+        <test-method signature="test04_ValidatePageSpeedOfCrawlerMenus(java.lang.String)[pri:4, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:12:48 IST" name="test04_ValidatePageSpeedOfCrawlerMenus" finished-at="2023-01-20T12:17:00 IST" duration-ms="251928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://zeenews.india.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04_ValidatePageSpeedOfCrawlerMenus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zee.backend.TestWebPageSpeed@242aa8d9]" started-at="2023-01-20T12:17:00 IST" name="tearDown" finished-at="2023-01-20T12:17:03 IST" duration-ms="3088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zee.backend.TestWebPageSpeed -->
+    </test> <!-- ZeeNews_Regression_Suite -->
+  </suite> <!-- ZeeNews_Regression_Suite -->
+</testng-results>

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">ZeeNews_Regression_Suite</th></tr>
+<tr><td><a href="#t0">ZeeNews_Regression_Suite</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">564,456</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ZeeNews_Regression_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ZeeNews_Regression_Suite &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.zee.backend.TestWebPageSpeed</td><td><a href="#m0">test01_ValidatePageSpeedOfArticleForWeb</a></td><td rowspan="1">1674196661691</td><td rowspan="1">162326</td></tr><tr class="failedeven"><td><a href="#m1">test03_ValidatePageSpeedOfPhotosForWeb</a></td><td rowspan="1">1674196923527</td><td rowspan="1">39847</td></tr><tr><th colspan="4">ZeeNews_Regression_Suite &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.zee.backend.TestWebPageSpeed</td><td><a href="#m2">test02_ValidatePageSpeedOfVideoForWeb</a></td><td rowspan="1">1674196826114</td><td rowspan="1">88657</td></tr><tr class="passedeven"><td><a href="#m3">test04_ValidatePageSpeedOfCrawlerMenus</a></td><td rowspan="1">1674196968885</td><td rowspan="1">251928</td></tr></tbody>
+</table>
+<h2>ZeeNews_Regression_Suite</h2><h3 id="m0">com.zee.backend.TestWebPageSpeed#test01_ValidatePageSpeedOfArticleForWeb</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://zeenews.india.com</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Validated, The Core Vitals Assessment has been passed or failed.] but found [Passed]
+	at com.zee.backend.TestWebPageSpeed.test01_ValidatePageSpeedOfArticleForWeb(TestWebPageSpeed.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.zee.backend.TestWebPageSpeed#test03_ValidatePageSpeedOfPhotosForWeb</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://zeenews.india.com</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/photos/business/lic-premiums-online-payment-heres-step-by-step-guide-on-how-to-pay-lic-premiums-online-via-google-pay-paytm-phonepe-and-other-upi-2563662&quot; title=&quot;LIC premiums online payment: Here&apos;s step-by-step guide on how to pay LIC premiums online via google pay, paytm, phonepe and other UPI&quot;&gt;...&lt;/a&gt; is not clickable at point (498, 734). Other element would receive the click: &lt;div class=&quot;gradiant_bg&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ZD-104CCR3&apos;, ip: &apos;192.168.12.239&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ZEE\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:51432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b097ea033e75cdca82513ecfbe4a5221
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.zee.webpages.ZeeNewsIndiaPhotoPage.selectTheFirstPictureAppearOnPhotoSectionPage(ZeeNewsIndiaPhotoPage.java:104)
+	at com.zee.backend.TestWebPageSpeed.test03_ValidatePageSpeedOfPhotosForWeb(TestWebPageSpeed.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.zee.backend.TestWebPageSpeed#test02_ValidatePageSpeedOfVideoForWeb</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://zeenews.india.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.zee.backend.TestWebPageSpeed#test04_ValidatePageSpeedOfCrawlerMenus</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://zeenews.india.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
